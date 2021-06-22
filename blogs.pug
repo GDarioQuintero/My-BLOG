@@ -1,0 +1,24 @@
+include componentes/head.pug
+	title #{title[1]}
+	body 
+		include componentes/header.pug 
+		main.blogs-main
+			section.container-blogs-news
+				.grid-container.container-blogs-news-imagen
+					h3 Noticias
+					.container-blogs-img
+						img(src="assets/images/main.png", alt="imagen de blogs principal")
+					.container-blogs-news-contenido
+						h2 Titulo del Blogpost 
+						p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos.
+						a.blogs-boton(href='blog.html') Leer mas
+			section.container-blogs-posts
+				.grid-container
+					h2 Ultimos blogsposts
+					+blog('post-1.png',titulo[0],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('post-2.png',titulo[1],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('post-3.png',titulo[2],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('post-1.png',titulo[3],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('post-2.png',titulo[4],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('post-3.png',titulo[5],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+		include componentes/footer.pug

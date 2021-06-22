@@ -1,0 +1,27 @@
+include componentes/head.pug
+	title #{title[1]}
+	body 
+		include componentes/header.pug 
+		main.perfil-main 
+			section.perfil-descripcion-container 
+				.grid-container.perfil-descripcion-container-img
+					.perfil-img-container
+						img(src="assets/images/profile-pic.jpg", alt="")
+					.perfil-info-container
+						h1 Hola!
+						p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vitae ducimus illo sapiente corrupti sunt assumenda optio nemo, eveniet in neque voluptates aspernatur delectus corporis laboriosam. Laudantium quo totam nemo!
+			section.perfil-proyectos-container
+				.grid-container
+					h2 Proyectos
+					.proyectos-main-container
+						article.proyecto-container
+							h3 Titulo 1
+							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam vitae voluptates nostrum est quaerat beatae laborum rerum doloribus porro delectus earum expedita dolorem itaque quod perferendis, error eum ipsam unde?
+						article.proyecto-container
+							h3 Titulo 2
+							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam vitae voluptates nostrum est quaerat beatae laborum rerum doloribus porro delectus earum expedita dolorem itaque quod perferendis, error eum ipsam unde?Lorem ipsum dolor sit 
+						article.proyecto-container
+							h3 Titulo 3
+							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam vitae voluptates nostrum est quaerat beatae laborum rerum doloribus porro delectus earum expedita dolorem itaque quod perferendis, error eum ipsam unde?Lorem ipsum dolor sit it. Doloremque, eveniet saepe. Recusandae, quas. Animi nostrum corrupti architecto aliquam, tenetur aliquid excepturi rerum minus nihil, id in dignissimos. Illum, eius maxime.
+			include componentes/contact.pug
+		include componentes/footer.pug 
