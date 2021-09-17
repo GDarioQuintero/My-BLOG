@@ -1,0 +1,16 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/ajo.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 El Ajo 
+						p El ajo es un cultivo muy antiguo aprovechado por el bulbo que forma en la base de sus hojas. Es muy apreciado como condimento por el fuerte y característico sabor que presenta, y es un ingrediente muy utilizado sobre todo en la cocina mediterránea. Posee múltiples efectos medicinales, debidos a las sustancias azufradas que contiene.
+						p  El ajo es un cultivo muy antiguo que se ha consumido desde el siglo VI antes de Cristo. La planta pertenece a la familia de las Liliáceas, y su nombre científico es Allium sativum. Se aprovecha por el bulbo que forma en la base de las hojas, que puede pesar hasta 200g. Este bulbo o cabeza está formado por varios dientes, en número variable de 2 a 10, que se encuentran recubiertos por unas cubiertas que los protegen denominadas túnicas. Su propiedad es controlar el dolor de oído.
+			include componentes/contact.pug  
+		include componentes/footer.pug

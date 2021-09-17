@@ -32,6 +32,10 @@ a {
 	text-decoration: unset;
 }
 
+p {
+	text-align: justify;
+}
+
 /*Estilos del header*/
 
 header {
@@ -75,10 +79,11 @@ header .icons span {
 	display: flex;
 	margin-left: 50px;
 	align-items: center;
+	font-size: 3rem;
 }
 
 .container-logo img {
-	width: 250px;
+	width: 80px;
 }
 
 .container-perfil {
@@ -105,7 +110,18 @@ header .icons span {
 	background-image: url(../assets/images/cover.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;	
+  position: relative;
+}
+
+.home-main:before {
+  content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
 }
 
 .home-main section {
@@ -123,6 +139,7 @@ header .icons span {
 	letter-spacing: 10px;/*Espacio entre las letras*/
 	color: white;
 	text-align: center;
+  position: relative;
 }
 
 .home-main-button {
@@ -131,13 +148,13 @@ header .icons span {
 	background-color: #4acfad;
 	display: grid;
 	align-items: center;
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: 10px;
-	
+	position: relative;
 }
 
 .home-main-button a {
-	color: black;
+	color: white;
 	font-weight: bold;
 	font-size: 1.8rem;
 	text-decoration: unset;
@@ -166,6 +183,7 @@ header .icons span {
 
 .container-blogs-img img {
 	width: 85%;
+	border: 2px solid #4acfad;
 }
 
 .container-blogs-news-imagen h3 {
@@ -225,6 +243,7 @@ header .icons span {
 }
 
 .post-container p {
+	min-height: 170px;
 	margin-bottom: 35px;
 	font-size: 1.6rem;
 }
@@ -236,7 +255,8 @@ header .icons span {
 }
 
 .blogpost-img-container img {
-	width: 100%;	
+	width: 100%;
+	border: 2px solid #47cfac;	
 }
 
 .blogpost-main-container {
@@ -247,6 +267,12 @@ header .icons span {
 	padding-bottom: 20px;
 	font-size: 1.5rem;
 	border-bottom: 1px solid #cdd2da;
+}
+
+
+.blogpost-main-container h4 {
+	padding: 40px 0 30px 0;
+	font-size: 2rem;
 }
 
 .blogpost-main-container article h1 {

@@ -7,18 +7,17 @@ include componentes/head.pug
 				.grid-container.container-blogs-news-imagen
 					h3 Noticias
 					.container-blogs-img
-						img(src="assets/images/main.png", alt="imagen de blogs principal")
+						img(src="assets/images/img_medicina_tradicional.jpg", alt="imagen de blogs principal")
 					.container-blogs-news-contenido
 						h2 ¿Que es la medicina tradicional?
-						p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos.
-						a.blogs-boton(href='blog.html') Leer mas
+						p La medicina tradicional es todo el conjunto de conocimientos, aptitudes y prácticas basados en teorías, creencias y experiencias indígenas de las diferentes culturas 
+						a.blogs-boton(href='blog_1.html') Leer mas
 			section.container-blogs-posts
 				.grid-container
 					h2 Ultimos blogsposts
-					+blog('post-1.png',titulo[0],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
-					+blog('post-2.png',titulo[1],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
-					+blog('post-3.png',titulo[2],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
-					+blog('post-1.png',titulo[3],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
-					+blog('post-2.png',titulo[4],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
-					+blog('post-3.png',titulo[5],'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum temporibus esse at voluptatum maiores earum non dignissimos, vitae possimus obcaecati, eius unde reiciendis iusto vel corporis nam quos deleniti illo','blog.html')
+					+blog('sabila.jpg',titulo[0],'La sábila es una planta medicinal, conocida también como Aloe vera, que posee diversas propiedades para la salud y es utilizada en diversos tratamientos de belleza, principalmente a nivel del cabello y de la piel...','blog_2.html')
+					+blog('romero.jpg',titulo[1],'El romero es una planta perenne que pertenece a la familia de las labiadas (Labiatae). Este arbusto puede llegar a alcanzar un metro y medio de altura. Posee muchas hojas finas y unas flores que pueden ser azuladas, blanquecinas o rosáceas...','blog_3.html')
+					+blog('limon.jpg',titulo[2],'l limón es una fruta cítrica, caracterizada por un fuerte sabor ácido, tiene forma esférica y se encuentra revestido por una concha gruesa, lisa, de color verde intenso, su interior es de color amarillo...','blog_4.html')
+					+blog('stevia.jpg',titulo[3],'El Stevia es un edulcorante natural obtenido de un arbusto llamado rebudiaba de stevia. Se encuentra generalmente en el continente de Suramérica. Es 200-400 veces más dulce que la sucosa y es un edulcorante no-calórico...','blog_5.html')
+					+blog('ajo.jpg',titulo[4],'El ajo es un cultivo muy antiguo aprovechado por el bulbo que forma en la base de sus hojas. Es muy apreciado como condimento por el fuerte y característico sabor que presenta, y es un ingrediente muy utilizado sobre todo en la cocina mediterránea...','blog_6.html')
 		include componentes/footer.pug

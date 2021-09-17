@@ -1,0 +1,18 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/sabila.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 Sabila como medicina tradicional 
+						p La sábila es una planta medicinal, conocida también como Aloe vera, que posee diversas propiedades para la salud y es utilizada en diversos tratamientos de belleza, principalmente a nivel del cabello y de la piel. Su nombre científico es Aloe Vera y puede comprarse en tiendas de productos naturales, farmacias de manipulación, algunos mercados municipales y supermercados. 
+						h4 Para que sirve a nivel medicinal 
+						p  La sábila proporciona poderosos beneficios sobre la piel y el cabello, debido a que contiene sustancias mucilaginosas y quercetina que funcionan como un emoliente y renuevan las células dañadas de la sobre la piel, asimismo, posee polisacáridos y hormonas vegetales responsables por la estimulación e hidratación de las células. El aloe vera por ser rico en vitaminas y minerales como vitamina A, B, C y E, calcio, magnesio, potasio, selenio, zinc y fosfato de manosa, este último actúa sobre el crecimiento de los tejidos proporcionando un efecto cicatrizante, así como ayuda a fortalecer el sistema inmune
+						p Sus cristales son muy cicatrizantes y curativos, la mancha de la sábila  es purga para el hígado y perfecta para la caída del cabello. 
+			include componentes/contact.pug  
+		include componentes/footer.pug

@@ -1,0 +1,21 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/img_medicina_tradicional.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 ¿Que es la medicina tradicional? 
+						p La medicina tradicional es todo el conjunto de conocimientos, aptitudes y prácticas basados en teorías, creencias y experiencias indígenas de las diferentes culturas, sean o no explicables, usados para el mantenimiento de la salud, así como para la prevención, el diagnóstico, la mejora o el tratamiento de enfermedades físicas o mentales. 
+						h4 Conceptos básicos sobre la medicina tradicional. 
+						p  Las definiciones pueden diferir de las que figuran en las reglamentaciones de los países donde se utiliza la medicina tradicional, por lo que deben servir exclusivamente como referencia.
+						p <strong>Hierbas:</strong> comprenden materiales vegetales brutos, tales como hojas, flores, frutos, semillas, tallos, madera, corteza, raíces, rizomas y otras partes de plantas, enteros, fragmentados o pulverizados.
+						p <strong>Materiales herbarios:</strong> comprenden, además de hierbas, jugos frescos, gomas, aceites fijos, aceites esenciales, resinas y polvos secos de hierbas. En algunos países esos productos se pueden elaborar mediante diversos procedimientos locales, como el tratamiento con vapor, el tostado o el rehogado con miel, bebidas alcohólicas u otros materiales.
+						p <strong>Preparaciones herbarias:</strong> son la base de los productos herbarios acabados y pueden componerse de materiales herbarios triturados o pulverizados, o extractos, tinturas y aceites grasos de materiales herbarios. Se producen por extracción, fraccionamiento, purificación, concentración y otros procesos biológicos o físicos. También comprenden preparaciones obtenidas macerando o calentando materiales herbarios en bebidas alcohólicas o miel o en otros materiales.
+						p <strong>Productos herbarios acabados:</strong> se componen de preparaciones herbarias hechas a partir de una o más hierbas. Si se utiliza más de una hierba, se puede utilizar también la expresión «mezcla de productos herbarios». Los productos herbarios acabados y las mezclas de productos herbarios pueden contener excipientes, además de los principios activos. Sin embargo, no se consideran herbarios los productos acabados o en forma de mezcla a los que se hayan añadido sustancias activas químicamente definidas, incluidos compuestos sintéticos o constituyentes aislados de materiales herbarios.
+			include componentes/contact.pug  
+		include componentes/footer.pug
