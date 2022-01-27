@@ -1,0 +1,15 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/verdolaga.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 Verdolaga
+						p Portulaca oleracea, es una de esas plantas mal llamadas malezas, que aquí en eco cosas nos gusta llamar buenazas. Crece espontanea en casi cualquier rincón, al sol o a la sombra, en suelos pobres, piedra, arena, en cualquier esquina, contra una pared, en el patio trasero y hasta en las baldosas rotas de la acera. .Machacada en crudo purga excelente para los niños.
+			include componentes/contact.pug  
+		include componentes/footer.pug
