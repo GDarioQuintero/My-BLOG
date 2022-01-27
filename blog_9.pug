@@ -1,0 +1,16 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/naranja-agria.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 La Naranja Agria 
+						p La naranja agria o amarga no sólo es usada en lo culinario sino también la utilizan los expertos en hierbas para curar múltiples enfermedades. Su nombre científico es Citrus aurantium y crece en los climas tropicales. 
+						p  Tanto la corteza del fruto, como las hojas y flores del árbol prodigan beneficios a la salud del hombre. En determinadas épocas del año que escasea el limón, el cítrico en cuestión lo sustituye en la cocina para adobar carnes de diferentes tipos, especialmente la de pescado.
+			include componentes/contact.pug  
+		include componentes/footer.pug

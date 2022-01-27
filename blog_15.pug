@@ -1,0 +1,15 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/yarumo.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 Yarumo
+						p Nombre cientifico: Cecropia telenitida, son arboles con hojas muy distintivas: éstas son grandes y duras y tienen la forma de una gran mano (digitadas). En muchas especies, el envés de la hoja es grisáceo o blanquecino. Las flores y frutos están dispuestos en racimos colgantes que parecen largos dedos. Esta planta da un racimo pequeño de cachacos y este ayuda para problemas en la próstata.
+			include componentes/contact.pug  
+		include componentes/footer.pug

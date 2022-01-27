@@ -1,0 +1,16 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/guacimo.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 El Guacimo 
+						p Es una planta medicinal, también conocida como guácima, caulote o majagua, se trata de un árbol de mediano tamaño perteneciente a la familia de las malváceas, nativo de América tropical. Es muy común en los países de América central y del sur como Brasil, México o Argentina; es muy utilizada como remedio natural para tratar varios problemas de salud como dolor abdominal, cólicos y caída del cabello.
+						p  Es un árbol de aspecto bajo, bastante ramificado que puede alcanzar hasta 20 metros de altura, posee un tronco de 30 a 60 cm de diámetro recubierto de corteza gris. Contiene, savia incolora, mucilaginosa y su baba es muy medicinal y las pepas  son depurativas ayudan a descargar el hígado. 
+			include componentes/contact.pug  
+		include componentes/footer.pug

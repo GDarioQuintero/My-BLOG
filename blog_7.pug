@@ -1,0 +1,16 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/consuelda.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 La Consuelda 
+						p La Consuelda es una planta medicinal cuyas propiedades son antiinflamatorias y cicatrizantes, es muy recomendada para uso externo en el tratamiento de fracturas menores de las articulaciones, artritis, esguinces y otras lesiones.
+						p  La Consuelda contiene grandes propiedades medicinales gracias a sus componentes como la alantoína, el cual se encuentra en la raíz; también es rica en proteínas vegetales, silicio, taninas, alantoínas, mucílagos, inulina, pirogalol, aceites esenciales, resinas, taninos, germanio y asparagina. La planta da una botija esta da un agua y sirve para los ojos y las flores machacadas ayudan para curar las hernias.
+			include componentes/contact.pug  
+		include componentes/footer.pug

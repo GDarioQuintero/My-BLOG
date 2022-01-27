@@ -1,0 +1,16 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/noni.jpeg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 Noni 
+						p es una fruta que se encuentra en la India y Panamá. Su capa exterior presenta un color verde pálido mientras que su carne es blanca y llena de huesos. Se trata de un alimento al que los nativos de las islas del Pacífico atribuyen propiedades curativas, aunque no se hay una base científica que apoye esa teoría. 
+						p  En occidente, el Noni se consume como suplemento debido a sus supuestas propiedades beneficiosas. Este se puede comer tanto crudo como cocido, al igual que sus semillas, que se tuestan. También es común encontrarlo en el mercado en forma de zumo.
+			include componentes/contact.pug  
+		include componentes/footer.pug

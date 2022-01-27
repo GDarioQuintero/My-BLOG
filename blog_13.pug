@@ -1,0 +1,17 @@
+include componentes/head.pug
+	title #{title[2]}
+	body 
+		include componentes/header.pug 
+		main
+			section.grid-container.blogpost-img-container
+				img(src="assets/images/marihuana.jpg", alt="Imagen del blog")
+			section.blogpost-main-container
+				.grid-container 
+					h3 Noticias
+					article 
+						h1 Marihuana o Cannabis 
+						p es una mezcla verde, marrón o gris de partes desmenuzadas y secas de la planta de marihuana. La planta contiene sustancias químicas que actúan en el cerebro y pueden cambiar su estado de ánimo o conciencia. 
+						p  La marihuana medicinal solo debería usarse después de que se hayan probado tratamientos con medicamentos de uso común. La marihuana interactúa con muchos otros medicamentos. Puede ser peligrosa si se toma con medicamentos que causan somnolencia o que controlan el estado de ánimo, como sedantes, ansiolíticos o antidepresivos. La marihuana baja el azúcar en la sangre y la presión arterial, por lo que usted debe tener cuidado si toma medicamentos para estas afecciones. También aumenta el riesgo de sangrado si está tomando medicamentos que previenen la formación de coágulos sanguíneos.
+						p La marihuana generalmente se fuma. También puede prepararse en té o vaporizada, rociarse debajo de la lengua, aplicarse en la piel o cocinarse con alimentos.
+			include componentes/contact.pug  
+		include componentes/footer.pug
